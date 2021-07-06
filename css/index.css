@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px double black;
+    width: 33.7vw;
+    left: 65.7vw;
+    position: relative;
+    height: 99vh;
+}
+#home::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 65.7vw;
+    background: url(../img/B.jpg) no-repeat 0px 0px/cover;
+    left: 0px;
+}
+button + h1{
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 2px 1px 0px #b3b4b9;
+    margin-top: -30px;
+}
+#Admin{
+    border: none;
+    background:none;
+}
+#Voter{
+    border: none;
+    background:none;
+}
+#Admin:hover,#Voter:hover{
+    background:black;
+    border-radius: 22px;
+}
+.btn img{
+    width:200px;
+    height:200px;
+}
+#line{
+    border-width: 2px;
+    border-color: #aba3a3;
+    width: 33.5vw;
+}

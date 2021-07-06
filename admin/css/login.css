@@ -1,0 +1,70 @@
+.container {
+    height: 526px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container::before {
+    content: "";
+    background: url('../img/flag.jpg') no-repeat center center;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100vw;
+    opacity: 0.7;
+}
+.heading{
+    margin:23px 0px;
+    color: white;
+    text-shadow: 1px 1px 11px rgb(0, 0, 0);
+    z-index: 3;
+    font-size: 46px;
+}
+.heading::before{
+    content:"";
+    position: absolute;
+    top: 0px;
+    height: 100px;
+    width:100%;
+    background-color: black;
+    opacity: 0.09;
+}
+
+.btn {
+    padding: 10px 0px;
+    background-color: #5d9cec;
+    color: #f5f7fa;
+    cursor: pointer;
+    border-radius: 4px;
+    border: #5791da 1px solid;
+    margin:12px 0px;
+}
+
+.btn:hover {
+    background-color: #6da6ff;
+    border: #6da6ff 1px solid;
+}
+
+input[type=text],
+input[type=password],
+strong {
+    padding: 30px;
+    font-size: 20px;
+}
+strong{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.form-table{
+    border:2px solid white;
+    box-shadow: 1px 1px 9px black;
+    padding:40px;
+    background-color: black;
+}
+table{
+    background-color: white;
+    border: 2px solid #058690;
+    box-shadow: 0px 0px 8px #14deff;
+}

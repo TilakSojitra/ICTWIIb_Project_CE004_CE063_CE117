@@ -1,0 +1,81 @@
+* {    
+    box-sizing: border-box;    
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+  font-size: 48px;
+  padding: 16px;
+  font-family: 'Reggae One', cursive;
+  background-color: black;
+  color: white;
+  text-shadow: 3px 1px 5px #2c9e9e;
+}
+#feedimg{
+  height: 250px;
+  width: 521px;
+  z-index: 1;
+  position: absolute;
+  top: 194px;
+  right: 106px;
+}
+#givefeed{
+  height: 468px;
+  width: 400px;
+  z-index: 1;
+  position: absolute;
+  top: 133px;
+  right: 163px;
+}
+.row{
+  display: flex;
+  flex-direction: column;
+}
+input[type=text], select, textarea {       
+  padding: 12px;        
+  border-radius: 4px;    
+  border: 1px solid rgb(0, 0, 0);    
+  width: 452px;
+  margin-left: 123px;
+  font-weight: bold;
+  box-shadow: 1px 1px 9px #000;
+}    
+input[type=email], select, textarea {    
+  padding: 12px;    
+  margin-left: 123px;
+  border: 1px solid rgb(0, 0, 0);    
+  border-radius: 4px;
+  width: 452px;
+  box-shadow: 1px 1px 9px #000; 
+  font-weight: bold;  
+}    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+  color: white;   
+  width: 90px;
+  margin-left: 302px;
+  font-weight: bold; 
+  margin-top: 15px;
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;     
+}    
+input[type=submit]:hover {    
+  background-color: rgb(77 146 187);    
+}      
+.container {    
+  border-radius: 5px;    
+  background-color: #f7f7f7;    
+  padding: 20px;    
+  height: 523px;
+}    
+.col-25 {   
+  width:20px;     
+  margin: 26px 165px 0px 0px;   
+
+}     

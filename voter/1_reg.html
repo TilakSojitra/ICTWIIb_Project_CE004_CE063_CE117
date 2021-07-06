@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regestration Page | Vote India</title>
+</head>
+<style>
+    .form {
+        /* background-color: rgb(205, 238, 248); */
+        background-image: linear-gradient(45deg, orange,rgba(159, 159, 235, 0.884),green);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border: 2px solid black;
+    }
+
+    p {
+        display: inline;
+        font-weight: bolder;
+        font-size: 1.2rem;
+    }
+
+    .name_age input {
+        padding: 8px;
+        width: 270px;
+        border-radius: 12px;
+        margin: 25px;
+        transition: all 0.5s;
+        text-align: center;
+    }
+
+    .name_age input:focus {
+        background-color: lemonchiffon;
+        border-radius: 25px;
+    }
+
+    .password p {
+        display: inline;
+    }
+
+    .password input {
+        padding: 8px;
+        width: 270px;
+        border-radius: 12px;
+        margin: 25px;
+        transition: all 0.5s;
+        text-align: center;
+    }
+
+    .password input:focus {
+        background-color: lemonchiffon;
+        border-radius: 25px;
+    }
+
+    .contact input {
+        padding: 8px;
+        width: 270px;
+        border-radius: 12px;
+        margin: 25px;
+        transition: all 0.5s;
+        text-align: center;
+    }
+
+    .contact input:focus {
+        background-color: lemonchiffon;
+        border-radius: 25px;
+    }
+
+    .uid_input input {
+        padding: 8px;
+        width: 500px;
+        border-radius: 12px;
+        margin: 25px;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    .uid_input input:focus {
+        background-color: lemonchiffon;
+        border-radius: 25px;
+    }
+
+    .reset_submit input {
+        padding: 9px;
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 150px;
+        border-radius: 120px;
+        background-color: rgba(248, 240, 164, 0.76);
+        font-weight: bolder;
+    }
+
+    .back {
+        padding: 7px;
+        margin-top: 25px;
+    }
+
+    .back a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 1.5rem;
+        padding: 15px;
+        border-radius: 120px;
+        width: 50px;
+        background-color: black;
+        display: block;
+        width: 100px;
+        text-align: center;
+        font-weight: 500px;
+    }
+
+    .back a:hover {
+        color: black;
+        background-color: rgb(180, 243, 245);
+    }
+</style>
+
+<body>
+    <div class="form">
+        <center>
+            <form action="2_alert.php" method="post" enctype="multipart/form-data">
+                <center>
+                    <div class="name_age">
+                        <p>Name : </p><input type="text" name="voter_name" placeholder="Please enter Your Name"
+                            required>
+                        <p>Age : </p><input type="number" name="voter_age" placeholder="Please enter Your Age" required>
+                    </div>
+                </center>
+                <center>
+                    <div class="password">
+                        <p>Password : </p> <input type="password" name="password"
+                            placeholder="Please Enter Your Passwod" required>
+                        <p>Confirm Password : </p> <input type="password" name="confirm_password"
+                            placeholder="Please Enter Your Passwod" required>
+                    </div>
+                </center>
+                <center>
+                    <div class="contact">
+                        <p>Mobile Number : </p> <input type="tel" name="Phone_number"
+                            placeholder="Plese Enter Your Phone Number of 10 Digit" required>
+                        <p>Email Id : </p> <input type="email" name="email_id" placeholder="Please Enter Your E-mail Id"
+                            required>
+                    </div>
+                </center>
+                <center>
+                    <div class="uid">
+                        <p>Uniqe id number : </p>
+                        <div class="uid_input">
+                            <input type="number" name="uid_num" placeholder="Please Enter your uniqe identity number"
+                                required>
+                        </div>
+                    </div>
+                </center>
+                <div class="gender">
+                    <center>
+                        <p>Male : </p> <input type="radio" name="Gender" id="Gender" value="Male">
+                        <p>Female : </p> <input type="radio" name="Gender" id="Gender" value="Female">
+                    </center>
+                </div>
+                <center>
+                    <div class="reset_submit">
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                    </div>
+                </center>
+            </form>
+        </center>
+    </div>
+    <!-- Back Btn -->
+    <div class="back">
+        <a href="1_main.html">Back</a>
+    </div>
+</body>
+
+</html>
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page For Voter</title>
+</head>
+<script src="https://kit.fontawesome.com/4c20799483.js" crossorigin="anonymous"></script>
+<style>
+    body {
+        background-image: linear-gradient(orange,white,green);
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin-top: 53px;
+        padding: 50px;
+        background-color: rgba(94, 89, 89, 0.664);
+        border-radius: 12px;
+    }
+
+    .container form {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .container form .val input {
+        font-weight: bolder;
+        color: black;
+        border: none;
+        width: 400px;
+        margin: 15px;
+        padding: 8px;
+        border-radius: 120px;
+        transition: all 0.4s;
+        text-align: center;
+    }
+
+    .container form .val input:focus {
+        width: 500px;
+        background-color: rgb(252, 244, 174);
+    }
+
+    .footer {
+        margin-top: 145px;
+        background-color: rgb(133, 129, 129);
+        border-radius: 20px;
+        height: 118px;
+    }
+
+    .icon center h1 i {
+        margin: 10px;
+        margin-right: 25;
+        margin-left: 25;
+    }
+
+    .img img {
+        margin-top: 50px;
+        border-radius: 50%;
+    }
+
+    .loginbtn{
+        border: none;
+        margin-top: 45px;
+    }
+
+    .loginbtn input{
+        font-weight: bolder;
+        cursor: pointer;
+        width: 250px;
+        padding: 10px;
+        box-shadow: 5px 5px 8px black, -5px -5px 8px black;
+    }
+
+    .loginbtn input:hover{
+        background-color: black;
+        color: white;
+        box-shadow: 5px 5px 8px white, -5px -5px 8px white;
+
+    }
+
+    .fpass{
+        margin-left: 26px;
+        font-size: 18px;
+        color : white;
+    }
+</style>
+
+<body>
+    <center>
+        <div class="img">
+            <img src="images/2.jpg" alt="" srcset="">
+        </div>
+    </center>
+    <center>
+        <div class="container">
+            <form action="3_login_alerts.php" method="post">
+                <div class="val">
+                    <input type="text" name="username" placeholder="Please enter your name" required id="name">
+                    <input type="password" name="password" placeholder="Please enter your password" required id="pass">
+                </div>
+                <center>
+                    <div class="loginbtn">
+                        <input type="submit" value="Login">
+                        <a href="https://localhost/TS/Online%20Election/voter/emailsending.php" class="fpass">Forgot Password?</a>
+                    </div>
+                </center>
+            </form>
+        </div>
+    </center>
+    <center>
+        <div class="footer">
+            <footer>
+                <center>
+                    <h1>
+                        <p>...For any issue please contact the following authority...</p>
+                    </h1>
+                    <div class="icon">
+                        <center>
+                            <h1>
+                                <i class="fas fa-phone-volume"></i>
+                                <i class="fas fa-envelope-open"></i>
+                                <i class="fas fa-envelope-open-text"></i>
+                            </h1>
+                        </center>
+                    </div>
+                </center>
+            </footer>
+        </div>
+    </center>
+</body>
+
+</html>

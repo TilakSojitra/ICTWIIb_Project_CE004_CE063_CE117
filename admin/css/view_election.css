@@ -1,0 +1,107 @@
+body{
+    background: url('../img/flag.jpg') repeat center center;
+    background-repeat: repeat-y;
+    background-position: 0px 626px;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container::before {
+    content: "";
+    background: url('../img/flag.jpg') repeat center center;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+.h1{
+    font-family: 'KoHo', sans-serif;
+    color:black;
+    text-align: center;
+    display: block;
+    margin-top: 181px;
+}
+.h2 a{
+    font-family: 'KoHo', sans-serif;
+    color:blue;
+    text-decoration: underline;
+}
+.h2{
+    margin-top: -16px;
+}
+.heading{
+    margin:23px 0px;
+    color: white;
+    text-shadow: 1px 1px 11px rgb(0, 0, 0);
+    z-index: 3;
+    font-size: 46px;
+}
+.heading::before{
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width:100%;
+    background-color: black;
+    opacity: 0.09;
+}
+.btn {
+    padding: 10px 15px;
+    background-color: #5d9cec;
+    color: #f5f7fa;
+    cursor: pointer;
+    border-radius: 4px;
+    border: #5791da 1px solid;
+    margin:12px 0px;
+}
+.btn:hover {
+    background-color: #0b5dde;
+    border: #6da6ff 1px solid;
+}
+input[type=text],input[type=number]{
+    padding: 14px 0px 14px 54px;
+    width: 197px;
+    font-size: 19px;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 500;
+}
+strong{
+    font-family: 'Merriweather Sans', sans-serif;
+    padding:0px 25px;
+}
+.form-table{
+    position: absolute;
+    top: 163px;
+    border:13px double white;
+    padding:40px;
+    box-shadow: 1px 1px 9px black;
+    background-color: black;
+}
+table{
+    background-color: #f1f3f3;
+    border: 2px solid #058690;
+    box-shadow: 0px 0px 8px #14deff;
+}
+th{
+    padding:18px;
+    font-size:22px;
+}
+.electionhead{
+    font-family: 'Reggae One', cursive;
+    height: 50px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.view{
+    padding:20px 0px;
+}
